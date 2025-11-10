@@ -6,9 +6,6 @@
       "type": "rust"
     },
     "actions_frontend": {
-      "dependencies": [
-        "actions_backend"
-      ],
       "source": [
         "src/actions_frontend/dist"
       ],
