@@ -21,6 +21,6 @@ jobs:
           canister_name: 'actions_frontend'
           deploy_frontend: 'true'
           frontend_dir: 'src/actions_frontend/dist'
-          backend_package: 'actions_backend'
+          backend_package: 'actions_frontend'
           frontend_package: 'actions_frontend'
           frontend_src_dir: 'src/actions_frontend'
