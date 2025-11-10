@@ -1,0 +1,26 @@
+name: Deploy to IC
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to IC
+        uses: Stephen-Kimoi/ic-deploy-action/action@v0.1.0
+        with:
+          pem_key: ${{ secrets.IC_PEM_KEY }}
+          network: 'ic'
+          canister_name: 'actions_backend'
+          deploy_frontend: 'true'
+          frontend_dir: 'src/actions_frontend/dist'
+          backend_package: 'actions_backend'
+          frontend_package: 'actions_frontend'
+          frontend_src_dir: 'src/actions_frontend'
