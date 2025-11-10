@@ -27,3 +27,7 @@ dist/
 # cursor files
 .specstory/ 
 .cursorindexingignore
+
+# Identity files
+deployer.pem
+deployer.pem.base64
