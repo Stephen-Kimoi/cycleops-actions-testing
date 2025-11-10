@@ -1,4 +1,7 @@
 {
+  "actions_backend": {
+    "ic": "avsqe-uaaaa-aaaah-qqhda-cai"
+  },
   "actions_frontend": {
     "ic": "okq5g-5qaaa-aaaad-acuaq-cai"
   }
